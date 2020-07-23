@@ -4,8 +4,10 @@
   "description": "App For Inventory Management",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "client": "npm start --prefix client"
+    "client-install": "npm inatall --prefix client",
+    "start": "node server.js",
+    "client": "npm start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=fa…n build --prefix client"
   },
   "author": "Yog Sharma",
   "license": "MIT",
